@@ -72,21 +72,6 @@ class Function:
         self.Payable = Payable
         self.Count = Count
         self.Seeds = []
-class Dependency:
-    def __init__(self, MemoryLoc, Op1, Block1, TxHash1, Op2, Block2, TxHash2, Covered):
-        self.MemoryLoc = MemoryLoc
-        self.Op1 = Op1
-        self.Block1 = Block1
-        self.TxHash1 = TxHash1
-        self.Op2 = Op2
-        self.Block2 = Block2
-        self.TxHash2 = TxHash2
-        self.Covered = Covered
-
-    def printDep(self):
-        #print([self.MemoryLoc[0:6] + "..." + self.MemoryLoc[-6:], self.Op1, self.Block1[0:6] + "..." + self.Block1[-6:],self.TxHash1, self.Op2, self.Block2[0:6] + "..." + self.Block2[-6:],self.TxHash2, self.Covered])
-        print([self.MemoryLoc[0:6]+"..."+self.MemoryLoc[-6:], self.Op1, self.Block1[0:6]+"..."+self.Block1[-6:], self.TxHash1[0:6]+"..."+self.TxHash1[-6:], self.Op2, self.Block2[0:6]+"..."+self.Block2[-6:], self.TxHash2[0:6]+"..."+self.TxHash2[-6:], self.Covered])
-
 
 def getAttackerAgent():
     # notdeployed = True
